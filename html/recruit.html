@@ -17,12 +17,12 @@
             <input id="name" type="text" name="name" placeholder="你的名字">
         </div>
         <div class="sex bg1"><span class="bg2">性别</span>
-            <label><input type="radio" name="sex" id="male"><span>男&ensp;&ensp;</span></label>
-            <label><input type="radio" name="sex" id="female"><span>女&ensp;&ensp;</span></label>
+            <label><input type="radio" name="sex" id="male" value="男"><span>男&ensp;&ensp;</span></label>
+            <label><input type="radio" name="sex" id="female" value="女"><span>女&ensp;&ensp;</span></label>
         </div>
         <div class="grade bg1"><span class="bg2">年级</span>
-            <label><input type="radio" name="grade" id="g1"><span>大一</span></label>
-            <label><input type="radio" name="grade" id="g2"><span>大二</span></label>
+            <label><input type="radio" name="grade" id="g1" value="大一"><span>大一</span></label>
+            <label><input type="radio" name="grade" id="g2" value="大二"><span>大二</span></label>
         </div>
         <div class="campus bg1"><span class="bg2">校区</span>
             <select name="campus" id="campus">
@@ -63,8 +63,9 @@
         </div>
 
     </div>
-    <div class="buttom"><a href="">提交</a></div>
+    <div class="buttom"><a id="submit">提交</a></div>
     <script src="../js/recruit.js"></script>
+    <script src="../js/ajax.js"></script>
 </body>
 
 </html>

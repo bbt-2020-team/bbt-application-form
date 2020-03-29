@@ -34,10 +34,15 @@ document.getElementById('campus').addEventListener('change', function () {
             }
         }
     }
-
-
 })
-
-function sendMes(){
+if (condition) {
+    
+} else {
     
 }
+
+
+
+
+
+
