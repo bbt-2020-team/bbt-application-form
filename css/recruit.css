@@ -1,0 +1,165 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+
+    margin: 0;
+    font-size: 1vw;
+    background-image: url(../img/背景.png);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position-x: -16vw;
+    background-position-y: -10vw;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    width: 29vw;
+    height: 8.5vw;
+    font-size: 3.7em;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #64bf49;
+    background-color: #e0f1db;
+    border: solid 2px #64bf49;
+    line-height: 7vw;
+    margin-top: 36vw;
+    margin-bottom: 10px;
+}
+
+.head,
+.buttom {
+    text-align: center;
+
+}
+
+.head-title {
+    margin-top: 8.2vw;
+    margin-bottom: 7.5vw;
+    height: 6.5vw;
+}
+
+.form {
+    text-align: center;
+    font-size: 4.6em;
+}
+
+.form>*>input {
+    background-color: transparent;
+    border: none;
+    font-size: 4vw;
+    margin-left: 10px;
+    padding: 0;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+input[type=text] {
+    position: relative;
+    left: 10.2vw;
+}
+
+.bg1 {
+    background-color: #e3f4dc;
+    position: relative;
+    width: 77vw;
+    height: 6vw;
+    margin: 2.2vw auto;
+    display: inline-block;
+}
+
+.bg2 {
+    background-color: #f0f5eb;
+    position: absolute;
+    width: 23vw;
+    left: 0;
+}
+
+.bg11 {
+    background-color: #e3f4dc;
+    position: relative;
+    width: 77vw;
+    height: 13.4vw;
+    margin: 2.2vw auto;
+    display: inline-block;
+}
+
+.bg22 {
+    background-color: #f0f5eb;
+    position: absolute;
+    width: 23vw;
+    height: 13.4vw;
+    left: 0;
+}
+
+.bg111 {
+    position: relative;
+    width: 77vw;
+    margin: 2.2vw auto;
+    display: block;
+}
+
+.bg222 {
+    background-color: #f0f5eb;
+    position: absolute;
+    width: 23vw;
+    left: 0;
+}
+
+#introduction {
+    position: absolute;
+    left: 0;
+    top: 6vw;
+    background-color: #e3f4dc;
+    width: 77.3vw;
+    height: 26vw;
+    outline: none;
+    resize: none;
+    border-radius: 2px;
+    border: none;
+
+}
+
+input,
+select,
+textarea,
+label {
+    color: #8f988b;
+    font-size: 4vw;
+    opacity: 0.6;
+}
+input::-webkit-input-placeholder{
+    color: #8f988b;
+    
+}
+input:focus,
+select:focus,
+textarea:focus,
+label:focus{opacity: 1;}
+
+
+select {
+    background-color: transparent;
+    border: none;
+    width: 49vw;
+    position: absolute;
+    right: 2vw;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(../img/下拉.png) no-repeat scroll right center transparent;
+    background-size: 4.4vw;
+    
+}
+option{
+    border: none;
+    overflow: scroll;
+}

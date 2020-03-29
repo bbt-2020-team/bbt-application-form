@@ -1,0 +1,126 @@
+body {
+    
+    margin: 0;
+    font-size: 1vw;
+    background-image: url(../img/背景.png);
+    background-size: cover;
+    background-position-x: -16vw;
+    background-position-y: -10vw;
+
+}
+
+.title-div,
+.content-div {
+    text-align: center;
+}
+
+h1 {
+    margin-top: 14vw;
+    margin-bottom: 7vw;
+    font-weight: initial;
+    font-size: 7em;
+}
+
+.page2.title {
+    margin-top: 10.5vw;
+    margin-bottom: 11vw;
+    height: 6.75vw;
+}
+
+.page2.content-img {
+    height: 84.5vw;
+    margin-bottom: 12.6vw;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    width: 78vw;
+    height: 15vw;
+    font-size: 6em;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 8.5vw;
+    box-sizing: border-box;
+    background-color: #efffeb;
+    border: solid 1px #d2ffc4;
+    line-height: 13vw;
+}
+
+li:active,
+a:active {
+    background-color: #a6e6ff
+}
+
+.button {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    width: 39vw;
+    height: 11vw;
+    font-size: 5em;
+    border-radius: 5px;
+    text-align: center;
+    box-sizing: border-box;
+    color: #ffffff;
+    background-color: #64bf49;
+    border: solid 1px #f6ac24;
+    line-height: 10vw;
+    margin-top: 12.5vw;
+    margin-bottom: 17vw;
+}
+
+.swiper-button-prev {
+    background-image: url(../img/left.png);
+    width: 5.5vw;
+    height: 6vw;
+    background-size: auto 100%;
+    position: fixed;
+    top: 80vw;
+    left: 7vw;
+    outline: none;
+}
+
+.swiper-button-next {
+    background-image: url(../img/right.png);
+    width: 5.5vw;
+    height: 6vw;
+    background-size: auto 100%;
+    position: fixed;
+    top: 80vw;
+    right: 7vw;
+    outline: none;
+}
+
+.head{
+    font-size: 5.5em;
+    color: #314034;
+    
+}
+.content{
+    font-size: 4.2em;
+    color: #2e3b2f;
+    width: 68vw;
+    height: 86vw;
+    padding: 10.3vw 1vw;
+    margin: 0 auto;
+    background-image: url(../img/背景框.png);
+    background-size: cover;
+    background-position: center;
+}
+p{
+    margin: auto 4vw;
+}
+
+.page2 {
+    display: none
+}
