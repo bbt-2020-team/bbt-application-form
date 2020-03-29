@@ -35,11 +35,7 @@ document.getElementById('campus').addEventListener('change', function () {
         }
     }
 })
-if (condition) {
-    
-} else {
-    
-}
+
 
 
 

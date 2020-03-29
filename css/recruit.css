@@ -46,7 +46,7 @@ a {
 
 .form {
     text-align: center;
-    font-size: 4.6em;
+    font-size: 4.5em;
 }
 
 .form>*>input {
@@ -72,7 +72,7 @@ input[type=text] {
     position: relative;
     width: 77vw;
     height: 6vw;
-    margin: 2.2vw auto;
+    margin: 0;
     display: inline-block;
 }
 
@@ -88,7 +88,7 @@ input[type=text] {
     position: relative;
     width: 77vw;
     height: 13.4vw;
-    margin: 2.2vw auto;
+    margin: 0;
     display: inline-block;
 }
 
@@ -158,8 +158,14 @@ select {
     background: url(../img/下拉.png) no-repeat scroll right center transparent;
     background-size: 4.4vw;
     
+    
 }
 option{
     border: none;
     overflow: scroll;
+}
+.err{
+    font-size: 4vw;
+    color: #cd403f;
+    
 }

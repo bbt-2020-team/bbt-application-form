@@ -14,7 +14,7 @@ function sendMes() {
     var grade = getRadio(document.getElementsByName("grade"));
     var campus = document.getElementById('campus').value;
     var college = document.getElementById('college').value;
-    var dorm = document.getElementById('dorm').value;
+    //var dorm = document.getElementById('dorm').value;
     var telephone = document.getElementById('telephone').value;
     var departments = document.getElementById('departments').value;
     var time = document.getElementById('time').value;
@@ -22,14 +22,14 @@ function sendMes() {
     
     var data = {
         'name': name,
-        'sex': sex,
+        'gender': sex,
         'grade': grade,
-        'campus': campus,
+        'area': campus,
         'college': college,
-        'dorm': dorm,
-        'telephone': telephone,
-        'departments': departments,
-        'time': time,
+        //'dorm': dorm,
+        'phone': telephone,
+        'department': departments,
+        'faceTime': time,
         'introduction': introduction
     };
     var xmlhttp = new XMLHttpRequest();
