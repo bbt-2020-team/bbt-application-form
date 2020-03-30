@@ -5,7 +5,6 @@ body {
 }
 
 body {
-
     margin: 0;
     font-size: 1vw;
     background-image: url(../img/背景.png);
@@ -29,7 +28,7 @@ a {
     border: solid 2px #64bf49;
     line-height: 7vw;
     margin-top: 36vw;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
 }
 
 .head,
@@ -68,12 +67,12 @@ input[type=text] {
 }
 
 .bg1 {
+    display: inline-block;
     background-color: #e3f4dc;
     position: relative;
     width: 77vw;
     height: 6vw;
     margin: 0;
-    display: inline-block;
 }
 
 .bg2 {
@@ -84,12 +83,12 @@ input[type=text] {
 }
 
 .bg11 {
+    display: inline-block;
     background-color: #e3f4dc;
     position: relative;
     width: 77vw;
     height: 13.4vw;
     margin: 0;
-    display: inline-block;
 }
 
 .bg22 {
@@ -101,10 +100,10 @@ input[type=text] {
 }
 
 .bg111 {
+    display: block;
     position: relative;
     width: 77vw;
-    margin: 2.2vw auto;
-    display: block;
+    margin: 1.2vw auto;
 }
 
 .bg222 {
@@ -112,6 +111,30 @@ input[type=text] {
     position: absolute;
     width: 23vw;
     left: 0;
+}
+
+.bg1err {
+    position: relative;
+    width: 77vw;
+    height: 5vw;
+    margin: 0;
+    display: inline-block;
+}
+
+.bg2err {
+    display: none;
+    font-size: 3vw;
+    position: absolute;
+    width: 23vw;
+
+    left: 0;
+}
+
+.err {
+    position: absolute;
+    left: 24vw;
+    font-size: 3vw;
+    color: #cd403f;
 }
 
 #introduction {
@@ -125,7 +148,6 @@ input[type=text] {
     resize: none;
     border-radius: 2px;
     border: none;
-
 }
 
 input,
@@ -136,36 +158,45 @@ label {
     font-size: 4vw;
     opacity: 0.6;
 }
-input::-webkit-input-placeholder{
+
+input::-webkit-input-placeholder {
     color: #8f988b;
-    
+
 }
+
 input:focus,
 select:focus,
 textarea:focus,
-label:focus{opacity: 1;}
-
+label:focus {
+    opacity: 1;
+}
 
 select {
     background-color: transparent;
     border: none;
+    position: relative;
     width: 49vw;
-    position: absolute;
-    right: 2vw;
+    height: 6vw;
+    left: 12vw;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
     background: url(../img/下拉.png) no-repeat scroll right center transparent;
     background-size: 4.4vw;
-    
-    
 }
-option{
+
+option {
     border: none;
     overflow: scroll;
 }
-.err{
-    font-size: 4vw;
-    color: #cd403f;
-    
+
+.hide{
+    display: none;
+}
+.show{
+    display: inline;
+}
+#uWarn{
+    position: absolute;
+    bottom: 0;
 }

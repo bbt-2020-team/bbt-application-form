@@ -13,24 +13,24 @@ departmentslist['国际校区'] = ['行政部', '人力资源部', '综合新闻
 document.getElementById('campus').addEventListener('change', function () {
     var campus = document.getElementById('campus').value;
     var college = document.getElementById('college');
-    college.innerHTML = ''; //空值
+    college.innerHTML = ''; //空字符值
     for (var i in collegelist) {
         if (i == campus) {
-            college.add(new Option('请选择'));
+            college.add(new Option('请选择',""));
             for (var j in collegelist[i]) {
-                college.add(new Option(collegelist[i][j], collegelist[i][j], null))
+                college.add(new Option(collegelist[i][j], collegelist[i][j]))
 
             }
         }
     }
     var campus = document.getElementById('campus').value;
     var departments = document.getElementById('departments');
-    departments.innerHTML = ''; //空值
+    departments.innerHTML = ''; //空字符值
     for (var i in departmentslist) {
         if (i == campus) {
-            departments.add(new Option('请选择'));
+            departments.add(new Option('请选择',""));
             for (var j in departmentslist[i]) {
-                departments.add(new Option(departmentslist[i][j], departmentslist[i][j], null))
+                departments.add(new Option(departmentslist[i][j], departmentslist[i][j]))
             }
         }
     }
