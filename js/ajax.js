@@ -32,43 +32,6 @@ function checkReg(reg, x1, errmsg) {
     
 }
 
-function send() {
-    var data = {
-        'name': name,
-        'gender': sex,
-        'grade': grade,
-        'area': campus,
-        'college': college,
-        //'dorm': dorm,
-        'phone': telephone,
-        'department': departments,
-        'faceTime': time,
-        'introduction': introduction
-    };
-    alert(JSON.stringify(data));
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.open('POST', 'http://129.204.250.51/sendform', true);
-    xmlhttp.setRequestHeader('Content-type', 'application/json');
-    xmlhttp.send(JSON.stringify(data));
-    xmlhttp.onreadystatechange = function () {
-        if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-            var response = xmlhttp.responseText;
-            var RESPONSE = JSON.parse(response);
-            var errcode = RESPONSE['errcode'];
-            var errmsg = RESPONSE['errmsg'];
-            if (errcode == 0) {
-                document.getElementById('uWarn').innerHTML = errmsg;
-                document.getElementById('uWarn').style.color = 'green';
-            } else {
-                document.getElementById('uWarn').innerHTML = errmsg;
-                document.getElementById('uWarn').style.color = 'red';
-            }
-        } else {
-            document.getElementById('uWarn').innerHTML = '请求失败';
-            document.getElementById('uWarn').style.color = 'red';
-        }
-    }
-}
 
 function sendMes() {
     //-------------------------------------------------------------------------
@@ -104,7 +67,41 @@ function sendMes() {
     var c9 = checkErr(time, '', errTime);
     //-------------------------------------------------------------------------
     if (c1 && c2 && c3 && c4 && c5 && c6 && c7 && c8 && c9) {
-        send();
+        var data = {
+            'name': name,
+            'gender': sex,
+            'grade': grade,
+            'area': campus,
+            'college': college,
+            //'dorm': dorm,
+            'phone': telephone,
+            'department': departments,
+            'faceTime': time,
+            'introduction': introduction
+        };
+        alert(JSON.stringify(data));
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open('POST', 'http://129.204.250.51/sendform', true);
+        xmlhttp.setRequestHeader('Content-type', 'application/json');
+        xmlhttp.send(JSON.stringify(data));
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                var response = xmlhttp.responseText;
+                var RESPONSE = JSON.parse(response);
+                var errcode = RESPONSE['errcode'];
+                var errmsg = RESPONSE['errmsg'];
+                if (errcode == 0) {
+                    document.getElementById('uWarn').innerHTML = errmsg;
+                    document.getElementById('uWarn').style.color = 'green';
+                } else {
+                    document.getElementById('uWarn').innerHTML = errmsg;
+                    document.getElementById('uWarn').style.color = 'red';
+                }
+            } else {
+                document.getElementById('uWarn').innerHTML = '请求失败';
+                document.getElementById('uWarn').style.color = 'red';
+            }
+        }
     } else {
 
     }
