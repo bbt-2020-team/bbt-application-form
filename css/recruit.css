@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'YouYuan';
+    src: url(../font/SIMYOU.TTF);
+}
+input,
+select,
+textarea,
+label {
+    color: rgba(0, 0, 0, 0.6);
+    
+}
+input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.6);
+
+}
+html,
+body {
+    margin: 0;
+    background-image: url(../img/树和背景.png);
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+
+    width: 540px;
+    height: 960px;
+}
+
+.title-div {
+    text-align: center;
+}
+
+.title {
+    height: 35px;
+    font-family: 'YouYuan';
+    font-size: 37.5px;
+    color: #3f403f;
+    font-weight: normal;
+    margin-top: 54px;
+    margin-bottom: 49.5px;
+}
+
+.content-div {
+    margin-left: 54.5px;
+    font-size: 22px;
+    width: 540px;
+    height: 739px;
+    overflow-y: scroll;
+}
+
+.bg1 {
+    display: inline-block;
+    height: 23.5px;
+    font-size: 25px;
+    color: #3f403f;
+    width: 114px;
+}
+
+.bg-a {
+    margin-bottom: 24px;
+}
+
+.bg2 {
+    display: inline-block;
+    height: 23.5px;
+    font-size: 25px;
+    color: #3f403f;
+    width: 182px;
+}
+
+.bg-b {
+    margin-bottom: 38px;
+}
+
+#time {
+    width: 236px;
+    background-position: 201.5px 50%;
+    padding-left: 20.5px;
+}
+
+.content-div>*>input {
+    
+    background-color: #d8e0b4;
+    border: none;
+    font-size: 22px;
+    padding: 0;
+    outline: none;
+    width: 309px;
+    height: 45.5px;
+    border-radius: 5px;
+    padding-left: 32px;
+    box-sizing: border-box;
+
+}
+input[type=radio]{
+    display: none;
+}
+input[type=radio]+span{
+    display: inline-block;
+    width: 20px;
+    height: 20.5px;
+    background-image: url(../img/选择.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    margin-right: 11.5px;
+}
+input[type=radio]:checked+span{
+    display: inline-block;
+    width: 20px;
+    height: 20.5px;
+    background-image: url(../img/选择选中.png);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    margin-right: 11.5px;
+}
+
+select {
+    
+    background-color: #d8e0b4;
+    border: none;
+    border-radius: 5px;
+    font-size: 22px;
+    width: 309px;
+    height: 45.5px;
+    padding: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(../img/下拉.png);
+    background-repeat: no-repeat;
+    background-position: 270px 50%;
+    background-attachment: scroll;
+    background-size: 14px;
+    box-sizing: border-box;
+    padding-left: 32px;
+    padding-right: 15px;
+    overflow-y: scroll;
+}
+
+option {
+    border: none;
+    overflow: scroll;
+}
+
+textarea {
+    
+    display: inline-block;
+    box-sizing: border-box;
+    width: 304.5px;
+    height: 139px;
+    border-radius: 5px;
+    background-color: #d8e0b4;
+    outline: none;
+    resize: none;
+    border: none;
+    font-size: 22px;
+    padding-left: 27.5px;
+    padding-top: 20.5px;
+    position: relative;
+    left: 111.5px;
+
+}
+
+.introduction {
+    position: relative;
+    margin-bottom: 56px;
+}
+
+.des {
+    position: absolute;
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 194px;
+    height: 57px;
+    border-radius: 28.317px;
+    background-color: #747f4c;
+    border: solid 5px #74804d;
+    font-size: 24.695px;
+    color: #f9ffe5;
+    line-height: 47px;
+    margin: 0 170px 0 121.5px;
+}
+a:active {
+    opacity: 0.5;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.show{
+    display: block
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0,user-scalable=no">
+    <title>BBT春季招新</title>
+    <link rel="stylesheet" href="./css/recruit.css">
+</head>
+
+<body>
+    <div class="title-div">
+        <h1 class="title">报名表</h1>
+    </div>
+    <div class="content-div">
+        <div class="name bg-a"><span class="bg1">姓名</span>
+            <input id="name" type="text" name="name" placeholder="你的名字" maxlength="12">
+        </div>
+        <div class="sex bg-a"><span class="bg1">性别</span>
+            <label><input type="radio" name="sex" id="male" value="男"><span></span><span>男</span></label>
+            <label><input type="radio" name="sex" id="female" value="女"><span></span><span>女</span></label>
+        </div>
+        <div class="grade bg-a"><span class="bg1">年级</span>
+            <label><input type="radio" name="grade" id="grade1" value="大一"><span></span><span>大一</span></label>
+            <label><input type="radio" name="grade" id="grade2" value="大二"><span></span><span>大二</span></label>
+        </div>
+        <div class="college bg-a"><span class="bg1">学院</span>
+            <select name="college" id="college">
+                <option value="">请选择</option>
+            </select>
+        </div>
+        <div class="dorm bg-a"><span class="bg1">宿舍</span>
+            <input id="dorm" type="text" name="dorm" placeholder="请按格式C6 501 输入" maxlength="12">
+        </div>
+        <div class="telephone bg-a"><span class="bg1">手机</span>
+            <input id="telephone" type="text" name="telephone" placeholder="请填写11位长号">
+        </div>
+        <div class="firstwish bg-a"><span class="bg1">第一志愿</span>
+            <select name="firstwish" id="firstwish">
+                <option value="">请选择</option>
+            </select>
+        </div>
+        <div class="secondwish bg-a"><span class="bg1">第二志愿</span>
+            <select name="secondwish" id="secondwish">
+                <option value="">选填</option>
+            </select>
+        </div>
+        <div class="adjustment bg-b"><span class="bg2">是否服从调剂</span>
+            <label><input type="radio" name="adjustment" id="yes" value="是"><span></span><span>是</span></label>
+            <label><input type="radio" name="adjustment" id="no" value="否"><span></span><span>否</span></label>
+        </div>
+        <div class="time bg-a"><span class="bg2">可面试时间安排</span>
+            <select name="time" id="time">
+                <option value="">请选择</option>
+            </select>
+        </div>
+        <div class="introduction"><span class="bg1 des">自我介绍</span>
+            <textarea name="introduction" id="introduction" cols="30" rows="10" placeholder="介绍一下自己吧（选填）"></textarea>
+        </div>
+        <div class="button-div">
+            <a id="submit">提交</a>
+    
+        </div>
+    </div>
+   
+
+    <script src="./js/config.js"></script>
+    <script src="./js/recruit.js"></script>
+    <script src="./js/ajax.js"></script>
+
+</body>
+
+</html>

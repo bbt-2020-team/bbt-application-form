@@ -1,0 +1,70 @@
+@font-face{
+    src: url(../font/msyh.ttc);
+    font-family: 'YaHei';
+}
+html,body{
+    margin: 0;
+    background-image: url(../img/树和背景.png);
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    
+    width: 540px;
+    height: 960px;
+}
+.head-img{
+    width: 233px;
+    height: 128.5px;
+    margin-top: 107.5px;
+    margin-bottom: 56px;
+}
+.head-div{
+    text-align: center;
+}
+.content-div{
+    font-family: 'YaHei';
+    font-size: 22.5px;
+    color: #222616;
+    margin: 0 90px;
+    width: 360px;
+    height: 282.5px;
+    overflow-y: scroll;
+}
+.button-div{
+    text-align: center;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:active{
+    opacity: 0.5;
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+.button{
+    display: inline-block;
+    box-sizing: border-box;
+}
+.button.recruit{
+    width: 220px;
+    height: 64.5px;
+    color: #ffffff;
+    background-color: #a2b369;
+    font-size: 27.895px;
+    border-radius: 31.85px;
+    line-height: 64.5px;
+    margin-top: 49.5px;
+}
+.button.introduction{
+    width: 218.5px;
+    height: 64px;
+    color: #8fa740;
+    background-color: #fefffc;
+    font-size: 27.785px;
+    border-radius: 31.862px;
+    line-height: 57.01px;
+    border: solid 3.495px #afcd4e;
+    margin-top: 39.5px;
+}

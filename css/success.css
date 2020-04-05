@@ -1,0 +1,43 @@
+html,
+body {
+    margin: 0;
+    background-image: url(../img/树和背景.png);
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+
+    width: 540px;
+    height: 960px;
+}
+.title-div {
+    text-align: center;
+}
+.title {
+    height: 49px;
+    font-size:50px;
+    color: #222616;
+    font-weight: normal;
+    margin-top: 270px;
+    margin-bottom: 209.5px;
+}
+.button-div{
+    text-align: center;
+}
+a {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 194px;
+    height: 57px;
+    border-radius: 28.317px;
+    background-color: #74804d;
+    font-size: 24.695px;
+    color: #f9ffe5;
+    line-height: 57px;
+    
+}
+a:active {
+    opacity: 0.5;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
